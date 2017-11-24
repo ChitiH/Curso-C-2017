@@ -48,7 +48,7 @@ int main(void){
     numR[0][1]="I";
     numR[0][0]="";
  
-    //Escribimos el numero entero que queremos convertir a numeros romanos
+    //Leemos el numero entero que queremos convertir a numeros romanos
     printf("Escribe un numero: \n");
     scanf("%i", &num);
     
