@@ -58,14 +58,18 @@ int main(void){
     opC = (num/100)%10;
     opM = (num/1000)%10;
 
-    //Solo queremos valores inferiores a 3000 
     if (num > 3000 ){
-        //Si es un valor superior a 300 mostrara por pantalla el siguiente mensaje
-        printf("Numero no valido \n");
+        //Como no se quieren valores superiores a 3000, si es un valor superior a 3000 mostrara por pantalla el siguiente mensaje
+        printf("Numero superiores a 3000 no son validos \n");
+    }
+    else if(num <0){
+        //Si es un valor inferior a 0 mostrara por pantalla el siguiente mensaje
+        printf("Numeros inferiores a cero no son validos \n");
     }
     else{
         //Si es un numero entero entre 0 y 3000 nos dira su conversion a numeros romanos
         printf("El numero en romano es: %s%s%s%s \n",numR[3][opM],numR[2][opC],numR[1][opD],numR[0][opU]);
     }
-    return 0;
+    
+    return 0; //Finalizamos el programa y verifica que todo se ejecuto correctamente 
 }
